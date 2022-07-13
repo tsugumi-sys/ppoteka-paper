@@ -1,0 +1,22 @@
+\documentclass[fleqn]{article}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\begin{equation}
+  MSE Loss = \frac{1}{N} \sum_{k=1}^{N}(y_k - \widehat{y}_k)^{2}
+\end{equation}
+\begin{description}
+  \item[$N$] The number of P-POTEKA's observation points.
+  \item[$y_k$] A ground truth value at k-th observation point.
+  \item[$\widehat{y_k}$] A prediction value at k-th observation point.
+\end{description}
+
+\begin{equation}
+  MSE Loss = \frac{1}{50*50} \sum_{i=1}^{50}\sum_{j=1}^{50} (y_{i,j} - \widehat{y}_{i,j})^{2}
+\end{equation}
+\begin{description}
+  \item[$y_{i,j}$] A ground truth value at i,j-th value of a grid data.
+  \item[$\widehat{y}_{i,j}$] A prediction value at i,j-th value of a grid data.
+\end{description}
+
+\end{document}
